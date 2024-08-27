@@ -54,10 +54,11 @@ const t = true;
 const f = false;
 let z; //undefined
 
-console.log(t || f, t && f, z, z == false, !z, z == undefined); //true false undefined false true, true
+console.log(t || f, t && f, z, z == false, !z, z == undefined); //true, false, undefined, false, true, true
 console.log(0 == false, 1 == false); //true, false
 
 if (!z) {
+  //ou z == undefined
   console.log("Z est non défini!");
 }
 
@@ -102,6 +103,7 @@ for (let i = count; i >= 0; i -= 100) {
 
 const id = 123321;
 function testId(idToValidate) {
+  //isNan (is Not A Number)
   if (isNaN(idToValidate)) {
     return false;
   }
