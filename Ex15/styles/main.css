@@ -11,3 +11,12 @@ header,
 main {
   margin: 1em;
 }
+
+#result {
+  display: flex;
+  margin-top: 1em;
+  div {
+    text-shadow: 1px 2px #ffffff;
+    text-align: center;
+  }
+}
